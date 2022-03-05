@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>浮动和定位</title>
+        <style>
+            header,footer{
+                background-color: #ddd;
+                border: 1px solid #000;
+                height: 50px;
+            }
+            aside,section{
+                background-color: #eee;
+                border: 1px solid #000;
+            }
+            aside{
+                width: 200px;
+                height: 200px;
+                float: left;
+            }
+            section{
+                height: 200px;
+                margin-left: 202px;
+            }
+            div{
+                background-color: #aaa;
+                border: 1px solid red;
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                top: 100px;
+                left: 500px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>头部</header>
+        <aside>左侧边栏</aside>
+        <section>内容区</section>
+        <footer>底部</footer>
+        <div>绝对定位元素</div>
+    </body>
+</html>
