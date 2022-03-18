@@ -1,0 +1,42 @@
+/* 项目2-2 电子杂志页面 */
+body,h4{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../images/bg.jpg);
+
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(../fonts/简方叠体.TTF);
+
+}
+
+.wrapper{
+    width: 1024px;
+    margin: 0 auto;
+    padding: 30px;
+    line-height: 1.75em;
+
+    font-family: myFont;
+    color: #333;
+
+    column-count: 2;
+    column-width: 400px;
+    column-gap: 100px;
+    column-rule: 3px solid #ccc;
+    text-indent: 2em;
+}
+
+h4{
+    font-size: 24px;
+    column-span: all;
+
+}
+
+p{
+    font-weight: bold;
+}
