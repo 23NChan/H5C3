@@ -1,0 +1,164 @@
+/* 多肉植物商城 */
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #f7f7f7;
+}
+
+/* 头部样式 */
+header{
+    text-align: center;
+    height: 450px;
+    margin-top: 20px;
+
+}
+
+/* 商品列表样式 */
+/* 最新肉肉样式 */
+.title{
+    width: 200px;
+    height: 50px;
+    background-color: #aaa6ba;
+    border: 5px solid #fff;
+    border-radius: 50px;
+    margin: 35px auto;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Microsoft Yahei";
+    font-size: 25px;
+    color: #fff;
+    position: relative;
+}
+
+/* 鼠标悬停时的样式 */
+.title:hover{
+    top:-5px;
+    box-shadow: 0 0 15px #aaa;
+}
+
+/* 图文列表项的样式 */
+.main{
+    width: 880px;
+    height: 440px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+}
+
+/* 其中一个多肉的样式 */
+.view{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+/* 鼠标不悬停时隐藏 */
+.view::before{
+    content: "";
+    position: absolute;
+    top: -240px;
+    right: 0;
+    width: 360px;
+    height: 360px;
+    background: rgba(133, 203, 190, 0.5);
+    /* 变形：旋转55度，水平向右移动60px */
+    transform: rotate(55deg) translateX(60px);
+    /* 设置变形起始点 */
+    transform-origin: 100% 0%;
+    /* 过渡动画 */
+    transition: all 0.5s ease 0.3s;
+}
+
+/* 鼠标不悬停时出现 */
+.view:hover:before{
+    top:0;
+}
+
+.view::after{
+    content: "";
+    position: absolute;
+    bottom: -240px;
+    left: 0;
+    width: 360px;
+    height: 360px;
+    background: rgba(133,203,190, 0.5);
+    transform: rotate(55deg) translateX(-60px);
+    transform-origin: 0% 100%;
+    transition: all 0.5s ease 0.3s;
+}
+
+.view:hover::after{
+    bottom:0;
+}
+
+/* 文本的样式 */
+.text{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 200px;
+    height: 0;
+    background:rgba(0, 0,0, 0.5);
+    text-align: center;
+    color: #fff;
+    transform:rotate(55deg);
+    overflow: hidden;
+    /* 设置元素的堆叠顺序 */
+    z-index: 4000;
+    transition: all 0.5s;
+}
+
+.view:hover .text{
+    height:120px;
+    transform: rotate(0deg);
+}
+
+.text h3{
+    color: #fff;
+    border-bottom: 2px solid rgba(76, 179, 77, 0.5);
+    padding-bottom: 10px;
+}
+
+/* 文本介绍的样式 */
+section{
+    width: 880px;
+    margin: 0 auto;
+    background-color: #aaa6ba;
+
+}
+
+section p{
+    font-family: "STXingkai";
+    font-size: 18px;
+    color: #fff;
+    line-height: 30px;
+    padding: 20px;
+    text-indent: 2em;
+}
+
+/* 脚注样式 */
+footer{
+    width: 880px;
+    margin: 0 auto;
+
+}
+
+footer p{
+    font-family: "STXingkai";
+    font-size: 35px;
+    color: #aaa6ba;
+    text-align: center;
+    line-height: 20px;
+    padding: 20px;
+
+}
+
+.service{
+    text-align: center;
+    padding-bottom: 50px;
+    font-family: "Microsoft Yahei";
+    font-size: 15px;
+    color: #374136;
+}
