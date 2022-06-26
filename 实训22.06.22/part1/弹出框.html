@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bootstrap.bundle.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <!-- 点机弹出框周围空白区域关闭弹出框 -->
+            <button type="button" class="btn btn-success " data-toggle="popover" data-trigger="focus" data-placement="bottom" title="我是提示内容">按钮</button>
+            <!-- 鼠标悬停打开弹出框移走关闭 -->
+            <button type="button" class="btn btn-success " data-toggle="popover" data-trigger="hover" data-placement="bottom" title="我是提示内容">按钮</button>
+        </form>
+    </div>
+
+    <script type="text/javascript">
+        $(function(){
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
+</body>
+</html>

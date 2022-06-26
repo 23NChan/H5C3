@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bootstrap.bundle.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <style>
+        .border{
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            margin: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- border -->
+        <span class="border"></span>
+        <span class="border border-left-0"></span>
+        <span class="border border-top-0"></span>
+        <br>
+        <!-- 边框颜色 -->
+        <span class="border border-success"></span>
+        <br>
+        <!-- 边框圆角 -->
+        <span class="border border-success rounded"></span>
+        <span class="border border-success rounded-top"></span>
+        <span class="border border-success rounded-right"></span>
+        <span class="border border-success rounded-circle"></span>
+        <br>
+        <!-- 浮动 -->
+        <div class="clearfix">
+            <span class="float-let">左浮动</span>
+            <span class="float-right">右浮动</span>
+        </div>
+        <br>
+        <!-- 响应式浮动 -->
+        <div class="float-sm-right">
+            在大于sm指定的屏幕宽度时向右浮动
+        </div>
+
+        <div class="float-none">
+            没有浮动
+        </div>
+
+        <br>
+
+        <!-- 居中对齐 -->
+        <div class="mx-auto bg-warning" style="width: 150px;">
+            居中对齐
+        </div>
+        <!-- 宽度 -->
+        <div class="w-25 bg-warning"> 宽度25%</div>
+        <div class="w-50 bg-warning"> 宽度25%</div>
+        <div class="w-75 bg-warning"> 宽度25%</div>
+        <div class="w-100 bg-warning"> 宽度25%</div>
+        <div class="mw-100 bg-warning" >最大宽度100%</div>
+
+        <br>
+        <!-- 高度 -->
+
+        <div class="" style="height: 200px;">
+            <div class="h-25 bg-warning"> 高度25%</div>
+            <div class="h-50 bg-white"> 高度25%</div>
+            <div class="h-75 bg-warning"> 高度25%</div>
+            <div class="h-100 bg-white"> 高度25%</div>
+            <div class="mh-100 bg-warning" >最大高度100%</div>
+        </div>
+        <br>
+        <!-- 间距{property}{sides}-{size} mt-0 -->
+        
+    </div>
+</body>
+</html>
